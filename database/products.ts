@@ -19,6 +19,18 @@ interface SeedData {
 export const initialData: SeedData = {
     products: [
         {
+            description: 'El nuevo Apple MacBook Air te da una gran potencia de uso gracias a su nuevo chipset M2 de diez núcleos, desarrollado con tecnología mejorada de 5 nanómetros, capaz de admitir hasta 24 GB de memoria unificada. Es un 18% más rápida que el chip anterior. Además, posee una capacidad de memoria de 8 GB de RAM y con una capacidad de 256GB.',
+            images: [
+                'macbook-air-m2_1.webp',
+                'macbook-air-m2_2.webp',
+            ],
+            inStock: 10,
+            price: 6000.0,
+            slug: 'macbook_air_m2',
+            title: 'Macbook Air M2',
+            category: 3
+        },
+        {
             description: 'Auriculares deportivos',
             images: [
                 'earphones_a_1.webp',

@@ -12,23 +12,23 @@ interface SeedData {
 export const initialData : SeedData = {
     categories : [
         {
-            title       : "Sonido y Musica",
-            slug        : "sonido_y_musica",
+            title       : "Auriculares",
+            slug        : "Auriculares",
             description : "Productos de sonido para que puedas reproducir tu musica con la mejor calidad"
         },
         {
-            title   : "Celulares, Tablets y Accesorios",
-            slug    : "celulares_tablets_y_accesorios",
+            title   : "Smartphones",
+            slug    : "smartphones",
             description : "Encuentra celulares de ultima generacion y accesorios con la mejor calidad"
         },
         {
-            title : "Computadoras y Laptops",
-            slug  : "computadoras_y_laptops",
+            title : "Computadoras",
+            slug  : "computadoras",
             description : "Encuentra computadoras y laptops de ultima generacion para tu trabajo o escuela."
         },
         {
-            title   : "Consolas y Video Juagos",
-            slug    : "consolas_y_video_juagos",
+            title   : "Consolas",
+            slug    : "consolas",
             description : "Las mejores consolas y los video juagos mas recientes para que disfrutes."
         }
     ]

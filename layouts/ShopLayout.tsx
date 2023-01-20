@@ -7,7 +7,8 @@ import { Navbar } from '@/components/ui';
 interface Props{
     title : string;
     description : string;
-    children : JSX.Element;
+    children : JSX.Element | JSX.Element[];
+
 }
 
 export const ShopLayout:FC<Props> = ({ title, description, children }) => {
@@ -20,7 +21,13 @@ export const ShopLayout:FC<Props> = ({ title, description, children }) => {
 
             <Navbar/>
 
-            <main>
+            <main
+                style={{
+                    padding:'1rem 0',
+                    maxWidth:'90%',
+                    margin:'0 auto',
+                }}
+            >
                 { children }
             </main>
         

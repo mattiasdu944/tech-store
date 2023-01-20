@@ -24,28 +24,34 @@ export const darkTheme = createTheme({
             main: 'rgb(245,45,55)'
         },
         secondary: {
-            main: '#3A64D8'
+            main: 'rgb(220, 220, 220)'
         },
+
         info: {
             main: '#fff'
-        }
+        },
+        
     },
     components: {
-        MuiLink: {
-            defaultProps: {
-                underline: 'none',
-
-            },
+        MuiToolbar: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: 'white',
+                    top: 0,
+                    position: 'sticky',
+                },
+            }
         },
+
         MuiAppBar: {
             defaultProps: {
                 elevation: 0,
-                position: 'fixed',
             },
             styleOverrides: {
                 root: {
                     backgroundColor: 'white',
-                    height: 60
+                    position: 'sticky',
+                    top: '0px',
                 },
             }
         },
@@ -66,6 +72,7 @@ export const darkTheme = createTheme({
                 },
                 root:{
                     color: 'rgba(0,0,0)',
+                    lineHeight: 1.2
                 }
             }
         },
@@ -74,7 +81,7 @@ export const darkTheme = createTheme({
         MuiButton: {
             defaultProps: {
                 variant: 'contained',
-                size: 'small',
+                size: 'medium',
                 disableElevation: true,
                 color: 'info'
             },
@@ -82,9 +89,12 @@ export const darkTheme = createTheme({
                 root: {
                     textTransform: 'none',
                     boxShadow: 'none',
-                    borderRadius: 10,
+                    borderRadius: '2rem',
+                    backgroundColor: 'rgb(245,45,55)',
+                    color: '#fefefe',
+                    padding:'.75rem 1.5rem',
                     ":hover": {
-                        backgroundColor: 'rgba(0,0,0,0.05)',
+                        backgroundColor: 'rgb(221,41,50)',
                         transition: 'all 0.3s ease-in-out'
                     }
                 }

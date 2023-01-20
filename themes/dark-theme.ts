@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 export const darkTheme = createTheme({
     typography: {
         fontFamily: [
-            'Poppins',
+            'Montserrat',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
@@ -18,9 +18,10 @@ export const darkTheme = createTheme({
     },
 
     palette: {
-        mode: 'dark',
+        mode: 'light',
+
         primary: {
-            main: '#1E1E1E'
+            main: 'rgb(245,45,55)'
         },
         secondary: {
             main: '#3A64D8'
@@ -62,6 +63,9 @@ export const darkTheme = createTheme({
                 subtitle1: {
                     fontSize: 18,
                     fontWeight: 600
+                },
+                root:{
+                    color: 'rgba(0,0,0)',
                 }
             }
         },
